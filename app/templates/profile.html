@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section>
+	<div class="top">
+		<img id="photo" src="{{ url_for('static', filename='profile.jpg') }}"></img>
+		<h1>{{ name }}</h1>
+		<p>@lawes</p>
+		<p>Kingston, Jamaica</p>
+		<p id="join-date">{{ date_joined }}</p>
+	</div>
+	<div class="bottom">
+		<p id="bio"> I strive to become a successful, professional software developer 
+			where I can express and utilize my creative skills and expertise to the 
+			benefit of our clients and for personal self growth. Contact me if you'd 
+			like to work together on a new project.</p>
+		<div class="stats">
+			<div class="stats-content">
+				<div class="number">7</div>
+				<div class="text">Posts</div>
+			</div>
+			<div class="stats-content">
+				<div class="number">100</div>
+				<div class="text">Following</div>
+			</div>
+			<div class="stats-content">
+				<div class="number">250</div>
+				<div class="text">Followers</div>
+			</div>
+		</div>	
+		<div id="follow-btn">Follow</div>
+	</div> 
+</section>
+{% endblock %}
